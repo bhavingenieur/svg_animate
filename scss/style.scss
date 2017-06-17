@@ -1,0 +1,26 @@
+svg {
+  width:700px;
+   height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;background:coral;
+  path {
+    fill-opacity: 0;
+    stroke: #000;
+    stroke-width: 3;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 10s infinite linear;
+  }
+}
+body{
+  background:black;
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
